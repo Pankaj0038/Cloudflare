@@ -21,7 +21,7 @@
 	- **Metabigor**<br>
 		> command:
 		```bash
-			echo "cloudflare" | metabigor net --org -v | awk '{print $3}'
+		echo "cloudflare" | metabigor net --org -v | awk '{print $3}'
 		```
 		Metabigor: https://github.com/j3ssie/metabigor/releases
 
@@ -87,23 +87,31 @@
    			```
 			file: subd.txt
 
-		- Subdomain scraping:
-				**Google dork**
-					methods: site:cloudflare.com -www.cloudflare.com
+	- Subdomain scraping:
+		- **Google dork**
+			>methods: site:cloudflare.com -www.cloudflare.com
 
-				**Subfinder**
-					Command: subfinder -d cloudflare.com
-					file: subf.txt
+		- **Subfinder**
+			>Command:
+   			```bash
+   			subfinder -d cloudflare.com
+      		```
+			>file: subf.txt
 
-				**Shosubgo**
-					file: shosub.txt
+		- **Shosubgo**
+			>file: shosub.txt
 
-4. Service Scanning:
+* Service Scanning:
 	
-	Masscan:
-		dnmasscan to convert domain name to ip
-		and then scan for all port
-		command: dnmasscan dom.txt dns.log -p80,443 -oG masscan.log
+	- **Masscan**:
+		>dnmasscan to convert domain name to ip and then scan for all port
+		>command:
+  		```bash
+    	dnmasscan dom.txt dns.log -p80,443 -oG masscan.log
+    	```
 
-	nmap:
-		command: nmap -sV 104.16.133.229 -oG nmap_op.txt 
+	- **nmap**:
+		command:
+		```bash
+  		nmap -sV 104.16.133.229 -oG nmap_op.txt
+  		```
