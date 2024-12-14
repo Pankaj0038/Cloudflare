@@ -1,28 +1,32 @@
-# Active scan
+# Cloudflare
+---
 
-1. Google Dorking:
-		Google Dorking (also known as Google hacking) is a technique that leverages advanced search operators in Google Search to find specific information that is not easily accessible through regular search queries.
+### Active scan
+---
+* Google Dorking:
+  	>Google Dorking (also known as Google hacking) is a technique that leverages advanced search operators in Google Search to find specific information that is not easily accessible through regular search queries.
 
 		using copyright text: "© 2024 Cloudflare, Inc."
 
-2. Crawler:
-		Crawler are used to systematically explore and gather information from websites and other online resources. 
+*  Crawler:
+  	>Crawler are used to systematically explore and gather information from websites and other online resources.
+   	- Shodan CLI:
+   	  >Command:
+		```bash
+		shodan search "hostname:<domain>"
+   		```
 
-		Shodan CLI:
-		Command: ```bash
-			shodan search "hostname:<domain>"```
-
-3. Subdomain Enumeration:
-		Subdomain enumeration helps to identify subdomains—smaller, often hidden sections of a website or domain—that can reveal valuable information about a target, its infrastructure, and potential attack vectors.
-
-		- Linked and JS discovery:
-				**Burp Suite**
-				file: burp.txt
-
-				**Hakrawler**
-					command: ```bash
-						echo "https://www.cloudflare.com" | hakrawler | sed 's|\(https\?://[^/]*\).*|\1|' | sort| uniq | grep -i "cloudflare"```
-				file: subd.txt
+* Subdomain Enumeration:
+  	>Subdomain enumeration helps to identify subdomains—smaller, often hidden sections of a website or domain—that can reveal valuable information about a target, its infrastructure, and potential attack vectors.
+   	- Linked and JS discovery:
+   	  	- **Burp Suite**
+			>file: burp.txt
+		- **Hakrawler**
+			>command:
+			```bash
+			echo "https://www.cloudflare.com" | hakrawler | sed 's|\(https\?://[^/]*\).*|\1|' | sort| uniq | grep -i "cloudflare"
+   			```
+			file: subd.txt
 
 		- Subdomain scraping:
 				**Google dork**
