@@ -27,8 +27,8 @@
 		echo "cloudflare" | metabigor net --org -v | awk '{print $3}'
 		```
   		> net: Discover Network Information about targets 
-		Metabigor: https://github.com/j3ssie/metabigor/releases
-    		> File:  [asnsByMetabigor.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/asnsByMetabigor.txt)
+		Metabigor: https://github.com/j3ssie/metabigor/releases<br>
+    		File:  [asnsByMetabigor.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/asnsByMetabigor.txt)
 
 * Seed Domain enumeration:
    >Enumerating seed domain helps gathering a comprehensive list of domain names associated with a target organization or entity.
@@ -40,6 +40,7 @@
 		amass intel -asn $asn                       
 		done
 	 	```
+  		> File: [seed_domain.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/seed_domain.txt)
 
 * Reverse WHOIS:
   	>Reverse WHOIS is a technique used in domain and cybersecurity reconnaissance where you search for domains or IP addresses associated with a particular entity or individual using WHOIS data.
@@ -49,7 +50,7 @@
 		```bash
 		curl "http://api.whoxy.com?key=<apikey>&reverse=whois&name=<domain>"
 		```
-
+  		> File: [](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/whois_data.txt)
 	- **DOMlink**
 		>Description: It uses whoxy api to automate reverse whois
 
@@ -62,6 +63,7 @@
 	  	```bash
 	  	python3 getrelationship.py domain <apikey>
 	  	```
+ 	 >File:  [related_domain.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/related_domain.txt)
 
 ---
 
