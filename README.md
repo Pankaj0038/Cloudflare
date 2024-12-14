@@ -123,3 +123,11 @@
 		```bash
   		nmap -sV 104.16.133.229 -oG nmap_op.txt
   		```
+  * Screenshotting:
+    	> Screenshotting domains helps to save time from rendering each
+  	- **Eyewitness**
+  		```bash
+    		eyewitness --web -f filename
+    	```
+    	> --web: HTTP Screenshot using Selenium
+
