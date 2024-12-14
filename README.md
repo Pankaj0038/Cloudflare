@@ -73,6 +73,7 @@
   	>Google Dorking (also known as Google hacking) is a technique that leverages advanced search operators in Google Search to find specific information that is not easily accessible through regular search queries.
 
 		using copyright text: "© 2024 Cloudflare, Inc."
+  	> File: [dork.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/dork.txt)
 
 *  Crawler:
   	>Crawler are used to systematically explore and gather information from websites and other online resources.
@@ -81,36 +82,37 @@
 		```bash
 		shodan search "hostname:<domain>"
    		```
-
+	> File: [web_crawl.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/web_crawl.txt)
 * Subdomain Enumeration:
   	>Subdomain enumeration helps to identify subdomains—smaller, often hidden sections of a website or domain—that can reveal valuable information about a target, its infrastructure, and potential attack vectors.
    	- Linked and JS discovery:
    	  	- **Burp Suite**
-			>file: burp.txt
+			>file: [burp.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/burp.txt)
 		- **Hakrawler**
 			>command:
 			```bash
 			echo "https://www.cloudflare.com" | hakrawler | sed 's|\(https\?://[^/]*\).*|\1|' | sort| uniq | grep -i "cloudflare"
    			```
-   			> sed: to remove paths from url
-   	  		> sort: to sort the domain names
-   	  		> uniq: to remove the duplicate
+   			> sed: to remove paths from url<br>
+   	  		> sort: to sort the domain names<br>
+   	  		> uniq: to remove the duplicate<br>
    	  		> grep: to fetch only the intended domain  
-			file: subd.txt
+			> file: [subd.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/subd.txt)
 
 	- Subdomain scraping:
 		- **Google dork**
-			>methods: site:cloudflare.com -www.cloudflare.com
+			>methods: site:cloudflare.com -www.cloudflare.com<br>
+   			>File: [subd_dork.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/subd_dork.txt)
 
 		- **Subfinder**
 			>Command:
    			```bash
    			subfinder -d cloudflare.com
       		```
-			>file: subf.txt
+			>file: [subf.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/subf.txt)
 
 		- **Shosubgo**
-			>file: shosub.txt
+			>file: [shosub.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/shosub.txt)
 
 * Service Scanning:
 	
@@ -120,19 +122,22 @@
   		```bash
     	dnmasscan dom.txt dns.log -p80,443 -oG masscan.log
     	```
-    	> dom.txt: domain name
-     	> -p80,443: providing ports to scan (eg. -p1-65535) 
+    	> dom.txt: domain name<br>
+     	> -p80,443: providing ports to scan (eg. -p1-65535) <br>
+      	> File: [masscan.log](https://github.com/Pankaj0038/Cloudflare/blob/main/active/masscan.log)
 
 	- **nmap**:
 		command:
 		```bash
   		nmap -sV 104.16.133.229 -oG nmap_op.txt
   		```
+  		>File: [nmap_op.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/nmap_op.txt)
   * Screenshotting:
     	> Screenshotting domains helps to save time from rendering each
   	- **Eyewitness**
   		```bash
     		eyewitness --web -f filename
     	```
-    	> --web: HTTP Screenshot using Selenium
+    	> --web: HTTP Screenshot using Selenium<br>
+     	> Folder: [2024-12-14_150314](https://github.com/Pankaj0038/Cloudflare/blob/main/active/2024-12-14_150314)
 
