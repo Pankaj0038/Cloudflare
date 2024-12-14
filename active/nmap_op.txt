@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 03:56:22 2024 as: /usr/lib/nmap/nmap --privileged -sV -oG nmap_op.txt 104.16.133.229
+Host: 104.16.133.229 ()	Status: Up
+Host: 104.16.133.229 ()	Ports: 80/open/tcp//http//Cloudflare http proxy/, 443/open/tcp//ssl|http//Cloudflare http proxy/, 8080/open/tcp//http//Cloudflare http proxy/, 8443/open/tcp//ssl|http//Cloudflare http proxy/	Ignored State: filtered (996)
+# Nmap done at Sat Dec 14 03:56:45 2024 -- 1 IP address (1 host up) scanned in 22.91 seconds
