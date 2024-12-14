@@ -17,12 +17,14 @@
 	  ```bash
 	  curl 'https://api.bgpview.io/search?query_term=cloudflare' | jq -r '.data.asns[].asn'
 	  ```
+   		> jq : JSON processor (-r = Raw output)
 
 	- **Metabigor**<br>
 		> command:
 		```bash
 		echo "cloudflare" | metabigor net --org -v | awk '{print $3}'
 		```
+  		> net: Discover Network Information about targets 
 		Metabigor: https://github.com/j3ssie/metabigor/releases
 
 * Seed Domain enumeration:
@@ -85,6 +87,10 @@
 			```bash
 			echo "https://www.cloudflare.com" | hakrawler | sed 's|\(https\?://[^/]*\).*|\1|' | sort| uniq | grep -i "cloudflare"
    			```
+   			> sed: to remove paths from url
+   	  		> sort: to sort the domain names
+   	  		> uniq: to remove the duplicate
+   	  		> grep: to fetch only the intended domain  
 			file: subd.txt
 
 	- Subdomain scraping:
@@ -109,6 +115,8 @@
   		```bash
     	dnmasscan dom.txt dns.log -p80,443 -oG masscan.log
     	```
+    	> dom.txt: domain name
+     	> -p80,443: providing ports to scan (eg. -p1-65535) 
 
 	- **nmap**:
 		command:
