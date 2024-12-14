@@ -1,0 +1,40 @@
+<html class="no-js" lang="en-US"><head>
+<title>Cloudflare Radar</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" id="cf_styles-css" href="https://cloudflare.com/cdn-cgi/styles/cf.errors.css" type="text/css" media="screen,projection">
+<style type="text/css">
+body{margin:0;padding:0}
+.fix{white-space: pre;}
+.clock{padding-right: 10px !important;}
+.msg{font-weight: 700 !important;}
+#term{font-family: "Courier New", Courier, monospace !important;}
+#term p{margin-top: 2px !important;}
+</style>
+<script defer="" src="/beacon.js"></script>
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div id="cf-error-details" class="cf-error-details-wrapper">
+      <div class="cf-wrapper cf-header cf-error-overview">
+        <h2 class="cf-subheadline" data-translate="error_desc">Radar Internet Quality Tests</h2>
+        <h1 class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight" style="visibility:hidden !important;height:0 !important">
+          <span data-translate="error">Error</span>
+          <span>1014</span>
+        </h1>
+      </div>
+
+      <div class="cf-section cf-wrapper">
+        <div class="cf-columns one">
+          <div class="cf-column" id="term"><p><span class="clock">2024-12-14T09:33:37.716Z</span><span class="msg">Taking 19 measurements...<span></span></span></p><p><span class="clock">2024-12-14T09:33:38.719Z</span><span class="msg">Measured <a href="https://jsdelivr.b-cdn.net/gh/jimaek/testobjects@0.0.1/r20-100KB.png" rel="nofollow noreferrer external">bunny</a> (img)<span></span></span></p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<span style="display: none !important;"><img width="0" height="0" hidden="" style="display: none !important;" referrerpolicy="no-referrer" src="https://jsdelivr.b-cdn.net/gh/jimaek/testobjects@0.0.1/r20-100KB.png?r=31253314"><img width="0" height="0" hidden="" style="display: none !important;" referrerpolicy="no-referrer" src="https://p36.cedexis-test.com/img/17653/r20-100KB.png?r=88643834"></span></body></html>
