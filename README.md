@@ -132,7 +132,7 @@
   		nmap -sV 104.16.133.229 -oG nmap_op.txt
   		```
   		>File: [nmap_op.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/active/nmap_op.txt)
-  * Screenshotting:
+* Screenshotting:
     	> Screenshotting domains helps to save time from rendering each
   	- **Eyewitness**
   		```bash
