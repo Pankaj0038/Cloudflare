@@ -7,8 +7,8 @@
 * Acquisitions:
   	>Acquisitions of a company refer to the businesses, assets, or companies that a particular company has purchased or taken control. Acquisitions provides a holistic understanding of a company’s strategies, market positioning, risks, and potential for growth.
 	- **Crunchbase**
-   		>Crunchbase is a comprehensive platform and database that provides information about businesses, startups, investors, and industry trends. It is widely used by entrepreneurs, investors, researchers, and analysts to gather data on companies, track funding rounds, discover new startups, and understand the overall startup ecosystem.
-     	> File: [acquisitions.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/acquisitions.txt)	
+   		>Crunchbase is a comprehensive platform and database that provides information about businesses, startups, investors, and industry trends. It is widely used by entrepreneurs, investors, researchers, and analysts to gather data on companies, track funding rounds, discover new startups, and understand the overall startup ecosystem.<br>
+     	>File: [acquisitions.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/acquisitions.txt)	
 
 * ASN Enumeration:
   	>An ASN (Autonomous System Number) is a unique identifier assigned to an Autonomous System (AS) in the context of BGP (Border Gateway Protocol) routing on the internet.
@@ -18,7 +18,8 @@
 	  ```bash
 	  curl 'https://api.bgpview.io/search?query_term=cloudflare' | jq -r '.data.asns[].asn'
 	  ```
-   		> jq : JSON processor (-r = Raw output)
+   		> jq : JSON processor (-r = Raw output)<br>
+     		file:  [asns.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/asns.txt)
 
 	- **Metabigor**<br>
 		> command:
@@ -27,6 +28,7 @@
 		```
   		> net: Discover Network Information about targets 
 		Metabigor: https://github.com/j3ssie/metabigor/releases
+    		> File:  [asnsByMetabigor.txt](https://github.com/Pankaj0038/Cloudflare/blob/main/passive/asnsByMetabigor.txt)
 
 * Seed Domain enumeration:
    >Enumerating seed domain helps gathering a comprehensive list of domain names associated with a target organization or entity.
